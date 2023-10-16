@@ -1,0 +1,122 @@
+/* overview.css */
+.overviewDiv,
+.customersDiv {
+  height: 330px;
+  background-color: #ffffff;
+  display: flex;
+  /* margin: 20px; */
+  border-radius: 10px;
+}
+
+.overviewContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  left: 19%;
+  width: 82vw;
+}
+
+.overviewDiv {
+  width: 65%;
+  margin-right: 35px;
+}
+
+.customersDiv {
+  width: 25%; /* Adjust the width */
+  /* margin-left: 70px; Adjust the left margin */
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overviewHeading {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.paraHeadings {
+  display: flex;
+  width: 65vw;
+  margin-top: -20px;
+}
+
+.monthlyEarningHeading,
+.quaterlyDropDown {
+  margin-left: 25px;
+  display: flex;
+}
+
+.monthlyEarningHeading {
+  width: 65%; /* Adjust the width */
+}
+
+.quaterlyDropDown {
+  margin-top: -25px;
+  padding: 5px 15px 18px 8px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fafbff;
+  color: grey;
+  cursor: pointer;
+}
+
+.label {
+  position: absolute;
+}
+
+.label h3 {
+  font-size: 32px;
+  margin: 5px 0 0 0;
+  font-weight: bold;
+}
+
+.label p {
+  margin: 5px 0 0 0px;
+  font-weight: bold;
+  line-height: 10px;
+}
+
+.piechartDiv {
+  background-color: #f9fbfb;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.piechartHeadings {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0 0 60px;
+}
+
+.customersHeading {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold;
+  line-height: 0;
+}
+
+.customersBuy {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #bab9b9; /* Customize the color if needed */
+}
+
+.piechartDiv {
+  background-color: #f9fbfb;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
