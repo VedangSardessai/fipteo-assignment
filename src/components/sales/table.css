@@ -65,7 +65,7 @@ td {
   .pdtStock,
   .pdtPrice,
   .pdtSale {
-    width: 0px; /* Set your desired maximum width */
+    width: 0px;
   }
 
   .text-info {
@@ -81,7 +81,8 @@ td {
 
 @media (max-width: 1280px) {
   .table-container {
-    width: 80%;
+    left: 0;
+
     position: absolute;
     display: flex;
     justify-content: left;
