@@ -3,10 +3,41 @@
 }
 
 .container {
+  display: flex;
+  gap: 20px;
   background-color: #f5f6f8;
-  height: 1000vh;
 }
 
+.dashboard {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  max-width: 100%; 
+}
+
+.bodyContent {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 100%; 
+}
+
+@media (min-width: 1200px) {
+  .bodyContent {
+    margin-left: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .bodyContent {
+    width: 110vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1199px) {
+  .bodyContent {
+    margin-left: 50px;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

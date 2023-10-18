@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <SearchBar />
-        <Dashboard />
+        <Dashboard className="dashboard" />
         <div className="bodyContent">
+          <SearchBar />
           <Financials />
           <Overview />
-          <Sales />{" "}
+          <Sales />
         </div>
       </div>
     </div>
