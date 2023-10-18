@@ -1,24 +1,14 @@
 .dashboardHeader {
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center; 
   margin-left: 25px;
-
+  font-size: 23px;
   color: white;
 }
 
 .dashboardIcons {
   margin-right: 25px;
 }
-
-.dashboardList {
-  position: absolute;
-  top: 0;
-  /* display: grid; */
-  width: 300px;
-  background-color: #040440;
-  height: 100vh;
-}
-
 .dashboardLinks {
   margin-top: 10px;
 }
@@ -39,4 +29,79 @@
 .dashboardLink.active {
   background-color: #2d2d69;
   color: white;
+}
+
+.dashboardList {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  background-color: #040440;
+  height: 120vh;
+  transition: transform 0.3s ease; 
+  
+}
+
+
+.menuButton {
+  position: fixed;
+  top: 30px;
+  left: 210px;
+  background: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+.dashboardList.closed {
+  transform: translateX(0);
+}
+@media (max-width: 1200px) {
+  .dashboardList {
+    transform: translateX(-100%);
+    width: 80%;
+    padding-left: 50px;
+  }
+  .menuButton {
+    display: block; 
+    position: fixed; 
+    top: 21px;
+    left: 25px;
+    
+  }
+}
+
+.dashboardContainer {
+  z-index: 100;
+}
+
+.projectManagerContainer {
+  width: 200px;
+  background-color: #2d2d69;
+  height: 45px;
+  display: flex;
+  margin: 300px 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.profileImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.leftImg {
+  display: grid;
+  place-items: center;
+}
+
+.rightContent {
+  left: 0;
+  color: white;
+  margin-left: 3px;
+  margin-right: 2px;
+  text-align: left;
 }
