@@ -1,33 +1,52 @@
 .searchBarDiv {
   display: flex;
   position: relative;
-  justify-content: space-between;
   align-items: center;
-  width: 78vw;
-  left: 20%;
+  padding-top: 25px;
 }
 
 .userHeader {
   padding-left: 25px;
+  font-size: 24px;
 }
 
 .searchBar {
+  position: absolute;
+  right: 0;
   padding-right: 25px;
 }
 
 .search {
   height: 25px;
-  width: 150px;
+  width: 200px;
   border-radius: 5px;
   outline: none;
-  border:none;
-  padding-left: 30px;
+  border: none;
+  padding-left: 50px;
 }
 
-.searchIcon{
-    color: grey;
-    display: grid;
-    position: relative;
-    top: 20px;
-    left: 5px;
+.searchIcon {
+  color: grey;
+  display: grid;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+@media (max-width: 1220px) {
+
+  .searchBar {
+    position: absolute;
+    padding-right: 25px;
+    margin-right: 10%;
+  }
+}
+@media (max-width: 1000px) {
+
+  .searchBar {
+    width: fit-content;
+    position: absolute;
+    padding-right: 25px;
+    margin-right: 100px;
+  }
 }
