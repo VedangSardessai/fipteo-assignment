@@ -63,7 +63,13 @@ export default function Overview() {
               </span>{" "}
             </div>
           </div>
-          <div style={{ width: "50vw", height: 250 }} className="barChart">
+          <div
+            style={{
+              width: "50vw",
+              height: 250,
+            }}
+            className="barChart"
+          >
             <ResponsiveContainer>
               <BarChart
                 data={salesData}
