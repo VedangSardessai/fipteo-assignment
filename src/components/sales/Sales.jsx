@@ -9,7 +9,6 @@ export default function Sales() {
       <div>
         <h2 className="overviewHeading">Product sell</h2>
         <div className="paraHeadings">
-          <div className="spacerDiv"></div>
           <div className="salesSearchAndQuaterly">
             <div className="salesSearchBar">
               <BsSearch className="salesSearchIcon" />
@@ -21,7 +20,7 @@ export default function Sales() {
                 id=""
               />
             </div>
-            <div className="quaterly">
+            <div className="lastdays">
               Last 30 days{" "}
               <span
                 style={{

@@ -55,3 +55,35 @@ td {
   font-size: 14px;
   font-weight: bold;
 }
+
+@media (max-width: 1044px) {
+  .product-description,
+  .product-info img {
+    display: none;
+  }
+
+  .pdtStock,
+  .pdtPrice,
+  .pdtSale {
+    width: 0px; /* Set your desired maximum width */
+  }
+
+  .text-info {
+    margin-left: 0;
+  }
+  .pdtimgnamedesc {
+    width: 10px;
+  }
+  .table-container {
+    width: 8%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .table-container {
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+  }
+}

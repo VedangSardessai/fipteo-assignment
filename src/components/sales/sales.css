@@ -1,0 +1,64 @@
+.salesContainer {
+  height: 1000px;
+  width: 75vw;
+  background-color: white;
+  /* left: 20%; */
+  position: relative;
+  margin: 15px 15px 0 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.salesHeader {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.salesSearchAndQuaterly {
+  display: flex;
+  position: absolute;
+  left: 70%;
+  top: 5%;
+}
+
+.salesSearchBar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.salesSearchIcon {
+  color: grey;
+  display: grid;
+  position: relative;
+  left: 25px;
+}
+
+.salesSearch {
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #f2f2f5;
+  padding-left: 35px;
+  margin-right: 20px;
+}
+
+.lastdays {
+  padding: 5px 15px 18px 8px;
+  height: 10px;
+  border-radius: 5px;
+  background: #f2f2f5;
+  color: grey;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1280px) {
+  .salesSearchAndQuaterly {
+    left: 45%;
+    top: 5%;
+  }
+}

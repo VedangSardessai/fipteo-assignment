@@ -89,7 +89,7 @@ export default function SalesTable() {
         <tbody>
           {tableData.map((data, index) => (
             <tr key={index}>
-              <td>
+              <td className="pdtimgnamedesc" >
                 <div class="product-info">
                   <img src={data.img} alt={data.name} class="pdtimg" />
                   <div class="text-info">
@@ -98,11 +98,11 @@ export default function SalesTable() {
                   </div>
                 </div>
               </td>
-              <td>{data.stock}</td>
-              <td>
+              <td className="pdtStock">{data.stock}</td>
+              <td className="pdtPrice">
                 <b>{data.price}</b>
               </td>
-              <td>{data.totalSales}</td>
+              <td className="pdtSale">{data.totalSales}</td>
             </tr>
           ))}
         </tbody>
