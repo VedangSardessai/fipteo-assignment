@@ -5,9 +5,10 @@ import SalesTable from "./SalesTable";
 export default function Sales() {
   return (
     <div className="salesContainer">
-      {/* <div className="overviewDiv"> */}
-      <div>
-        <h2 className="overviewHeading">Product sell</h2>
+      <div style={{
+        height:'35px'
+      }}>
+        <h2 className="salesHeader">Product sell</h2>
         <div className="paraHeadings">
           <div className="salesSearchAndQuaterly">
             <div className="salesSearchBar">
@@ -27,7 +28,7 @@ export default function Sales() {
                   display: "inline-block",
                   verticalAlign: "middle",
                   transform: "rotate(180deg)",
-                  marginLeft: "10px", // Add margin to adjust the spacing
+                  marginLeft: "5px", // Add margin to adjust the spacing
                 }}
               >
                 ^
@@ -36,7 +37,6 @@ export default function Sales() {
           </div>
         </div>
       </div>
-      {/* </div> */}
       <SalesTable />
     </div>
   );
