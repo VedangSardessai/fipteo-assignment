@@ -63,29 +63,32 @@ export default function Overview() {
               </span>{" "}
             </div>
           </div>
-          {/* <div className="barChart"> */}
-          <ResponsiveContainer width={950} height={260}>
-            <BarChart
-              data={salesData}
-              margin={{ top: 5, right: 30, left: 30, bottom: 5 }}
-            >
-              <XAxis
-                style={{
-                  marginTop: "20px",
-                }}
-                dataKey="month"
-                tickLine={null}
-                axisLine={null}
-              />
+          <div style={{ width: "50vw", height: 250 }} className="barChart">
+            <ResponsiveContainer>
+              <BarChart
+                data={salesData}
+                margin={{ top: 5, right: 30, left: 30, bottom: 5 }}
+              >
+                <XAxis
+                  style={{
+                    marginTop: "20px",
+                  }}
+                  dataKey="month"
+                  tickLine={null}
+                  axisLine={null}
+                />
 
-              <Bar radius={10} dataKey="sales" isAnimationActive={false}>
-                {salesData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.color || "#f2efff"} />
-                ))}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
-          {/* </div> */}
+                <Bar radius={10} dataKey="sales" isAnimationActive={false}>
+                  {salesData.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={entry.color || "#f2efff"}
+                    />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       </div>
       <div className="customersDiv">

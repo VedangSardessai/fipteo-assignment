@@ -4,31 +4,30 @@
   height: 330px;
   background-color: #ffffff;
   display: flex;
-  /* margin: 20px; */
   border-radius: 10px;
+  width: fit-content;
 }
 
 .overviewContainer {
   display: flex;
   position: relative;
   justify-content: space-evenly;
-  left: 19%;
-  width: 82vw;
+  margin-left: 20px;
+  /* width: 80vw; */
 }
 
 .overviewDiv {
-  width: 65%;
+  /* width: 66%; */
   margin-right: 35px;
 }
 
 .customersDiv {
-  width: 25%; /* Adjust the width */
-  /* margin-left: 70px; Adjust the left margin */
+  /* width: 25%; */
   background-color: white;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 25px;
 }
 
 .overviewHeading {
@@ -38,7 +37,7 @@
 
 .paraHeadings {
   display: flex;
-  width: 65vw;
+  /* width: 65vw; */
   margin-top: -20px;
 }
 
@@ -49,7 +48,7 @@
 }
 
 .monthlyEarningHeading {
-  width: 65%; /* Adjust the width */
+  width: 75%; /* Adjust the width */
 }
 
 .quaterlyDropDown {
@@ -119,4 +118,49 @@
   justify-content: center;
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 1500px) {
+  .overviewContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .overviewContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    /* margin-left: 50px; */
+  }
+
+  .overviewDiv {
+    /* width: 66%; */
+    margin-right: 35px;
+  }
+
+  .customersDiv {
+    /* width: 25%; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+  }
+
+  .piechartDiv {
+    width: 50vw;
+    height: 250;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .paraHeadings {
+    display: flex;
+    /* width: 65vw; */
+    justify-content: center;
+    margin-top: -20px;
+  }
+
 }
